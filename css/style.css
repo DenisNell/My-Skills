@@ -1,0 +1,229 @@
+:root {
+    --font-family: "Roboto", sans-serif;
+    --accent: #34547a
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.text__p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 164%;
+    color: #727272;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    color: #000;
+}
+
+.inner-box {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/* Дизайн и верстка */
+.label{}
+.first-screen {
+    min-height: 700px;
+    background: #eeeff1;
+}
+
+.first-screen__header-menu-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 67px;
+    margin-bottom: 135px;
+}
+
+.first-screen__menu-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+}
+
+.first-screen__menu-text-item {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 164%;
+    letter-spacing: 0.1em;
+    color: #000;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+.first-screen__menu-text-item:hover{
+    cursor: pointer;
+    color: var(--accent)
+}
+.first-screen__header-content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.first-screen__header-content-img {
+    display: block;
+    padding-top: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+}
+
+.first-screen__header-content-item {
+    padding: 0 15px;
+}
+
+.first-screen__header-content-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 164%;
+    color: #000;
+    margin-bottom: 33px;
+}
+
+.first-screen__header-content-text {
+    margin-bottom: 52px;
+}
+
+.first-screen__header-content-button {
+    width: 225px;
+    height: 65px;
+    background-color: var(--accent);
+    cursor: pointer;
+}
+
+.first-screen__header-content-button-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 164%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+/* Обо мне */
+.label{}
+.about-me__box {
+    max-width: 540px;
+    margin: 0 auto;
+    padding-top: 113px;
+}
+
+.about-me__title {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.about-me__text {
+    text-align: center;
+    margin-bottom: 91px;
+}
+
+/* Проекты */
+.label{}
+.project {
+    background-color: var(--accent);
+    margin-bottom: 103px;
+}
+
+.project__box-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    min-height: 250px;
+    align-content: center;
+    gap: 30px;   
+}
+
+.project__box-item-flex {
+    display: flex;
+    height: 50px;
+    width: 141px;
+    gap: 20px;
+}
+
+.project__text1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 21px;
+    color: #fff;
+}
+
+.project__text2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 164%;
+    color: #fff;
+}
+
+/* Навыки */
+.label{}
+.skills__box-flex {
+    display: flex;
+    justify-content: space-between;
+    min-height: 450px; 
+    margin-bottom: 100px;
+}
+.skills__title{
+    padding-top: 101px;
+    margin-bottom: 40px;
+}
+.skills__text{
+    margin-bottom: 12px;
+}
+
+.progress-bar {
+    display: flex;
+    width: 455px;
+    height: 4px;
+    background-color: #999;
+    margin-bottom: 27px;
+}
+.progress-bar-completed {
+    background-color: var(--accent);
+}
+.skills__img{
+    width: 555px;    
+}
+
+/* Как я работаю */
+.label{}
+.video {
+    background: #eeeff1;
+}
+
+.video__title {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 39px;
+}
+
+.video__text {
+    max-width: 540px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
