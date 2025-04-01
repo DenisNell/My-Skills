@@ -38,7 +38,7 @@ h4 {
 }
 
 .inner-box {
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 
@@ -103,6 +103,7 @@ h4 {
 
 .first-screen__header-content-text {
     margin-bottom: 52px;
+    max-width: 540px;
 }
 
 .first-screen__header-content-button {
@@ -123,6 +124,59 @@ h4 {
     text-transform: uppercase;
     padding-top: 20px;
 }
+@media screen and (max-width:1280px){
+    .first-screen__header-menu-flex {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .first-screen__img {
+        width: 96px;
+        height: 60px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .first-screen__menu-flex {
+        margin: 0 auto;
+        max-width: 520px;
+        flex-wrap: wrap;
+        
+    }
+        
+    .first-screen__header-content-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .first-screen__header-content-img {
+        margin-bottom: 50px;
+    }
+    .first-screen__header-content-title {
+        text-align: center;
+    }
+    
+    .first-screen__header-content-text {
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .first-screen__header-content-button {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .first-screen__menu-flex{
+        flex-direction: column;
+    }
+    .first-screen__header-menu-flex{
+        text-align: center;
+    }
+    .first-screen__menu-flex{
+        max-width: 300px;
+    }
+    .first-screen__header-content-img{
+        width: 300px;
+    }
+}
 
 /* Обо мне */
 .label{}
@@ -140,6 +194,17 @@ h4 {
 .about-me__text {
     text-align: center;
     margin-bottom: 91px;
+}
+@media screen and (max-width:1280px){
+    .about-me{
+        padding: 15px;
+    }
+    .about-me__box{
+        padding-top: 50px;
+    }
+    .about-me__text{
+        margin-bottom: 50px;
+    }
 }
 
 /* Проекты */
@@ -178,7 +243,18 @@ h4 {
     line-height: 164%;
     color: #fff;
 }
+@media screen and (max-width:1280px){
+    .project__box-grid{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+@media screen and (max-width:768px){
+    .project__box-grid{
+        grid-template-columns: repeat(2, 1fr)
+    }
 
+}
 /* Навыки */
 .label{}
 .skills__box-flex {
@@ -197,7 +273,7 @@ h4 {
 
 .progress-bar {
     display: flex;
-    width: 455px;
+    max-width: 455px;
     height: 4px;
     background-color: #999;
     margin-bottom: 27px;
@@ -206,11 +282,37 @@ h4 {
     background-color: var(--accent);
 }
 .skills__img{
-    width: 555px;    
+    max-width: 555px;    
+}
+@media screen and (max-width:1280px){
+    .skills__box-flex{
+        flex-direction: column;
+    }
+    .skills__list{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .skills__img{
+        margin: 0 auto;
+    }
+    .skills__title{
+        padding: 0;
+    }
+}
+@media screen and (max-width:768px){
+    .skills__img{
+        max-width: 300px;
+    }
 }
 
 /* Как я работаю */
 .label{}
+video {
+    cursor: pointer;
+    width: 1110px;
+    height: 600px;
+}
+
 .video {
     background: #eeeff1;
 }
@@ -226,4 +328,20 @@ h4 {
     margin: 0 auto;
     margin-bottom: 48px;
 }
-
+@media screen and (max-width:1280px){
+    .video{
+        padding: 15px;
+    }
+    video {
+        display: block;
+        cursor: pointer;
+        width: 550px;
+        height: 300px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:768px){
+    video{
+        width: 300px;
+    }
+}
