@@ -43,7 +43,8 @@ h4 {
 }
 
 /* Дизайн и верстка */
-.label{}
+.label {}
+
 .first-screen {
     min-height: 700px;
     background: #eeeff1;
@@ -72,10 +73,12 @@ h4 {
     text-transform: uppercase;
     padding-right: 10px;
 }
-.first-screen__menu-text-item:hover{
+
+.first-screen__menu-text-item:hover {
     cursor: pointer;
     color: var(--accent)
 }
+
 .first-screen__header-content-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -124,11 +127,13 @@ h4 {
     text-transform: uppercase;
     padding-top: 20px;
 }
-@media screen and (max-width:1280px){
+
+@media screen and (max-width:1280px) {
     .first-screen__header-menu-flex {
         margin-bottom: 0;
         align-items: center;
     }
+
     .first-screen__img {
         width: 96px;
         height: 60px;
@@ -137,51 +142,59 @@ h4 {
         padding-left: 15px;
         padding-top: 15px;
     }
+
     .first-screen__menu-flex {
         margin: 0 auto;
         max-width: 520px;
         flex-wrap: wrap;
-        
+
     }
-        
+
     .first-screen__header-content-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .first-screen__header-content-img {
         margin-bottom: 50px;
     }
+
     .first-screen__header-content-title {
         text-align: center;
     }
-    
+
     .first-screen__header-content-text {
         margin: 0 auto;
         margin-bottom: 25px;
     }
+
     .first-screen__header-content-button {
         margin: 0 auto;
         margin-bottom: 50px;
     }
 }
 
-@media screen and (max-width:768px){
-    .first-screen__menu-flex{
+@media screen and (max-width:768px) {
+    .first-screen__menu-flex {
         flex-direction: column;
     }
-    .first-screen__header-menu-flex{
+
+    .first-screen__header-menu-flex {
         text-align: center;
     }
-    .first-screen__menu-flex{
+
+    .first-screen__menu-flex {
         max-width: 300px;
     }
-    .first-screen__header-content-img{
+
+    .first-screen__header-content-img {
         width: 300px;
     }
 }
 
 /* Обо мне */
-.label{}
+.label {}
+
 .about-me__box {
     max-width: 540px;
     margin: 0 auto;
@@ -197,20 +210,24 @@ h4 {
     text-align: center;
     margin-bottom: 91px;
 }
-@media screen and (max-width:1280px){
-    .about-me{
+
+@media screen and (max-width:1280px) {
+    .about-me {
         padding: 15px;
     }
-    .about-me__box{
+
+    .about-me__box {
         padding-top: 50px;
     }
-    .about-me__text{
+
+    .about-me__text {
         margin-bottom: 50px;
     }
 }
 
 /* Проекты */
-.label{}
+.label {}
+
 .project {
     background-color: var(--accent);
     margin-bottom: 103px;
@@ -221,7 +238,7 @@ h4 {
     grid-template-columns: repeat(6, 1fr);
     min-height: 250px;
     align-content: center;
-    gap: 30px;   
+    gap: 30px;
 }
 
 .project__box-item-flex {
@@ -245,34 +262,41 @@ h4 {
     line-height: 164%;
     color: #fff;
 }
-@media screen and (max-width:1280px){
-    .project__box-grid{
+
+@media screen and (max-width:1280px) {
+    .project__box-grid {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
+
     .project {
         margin-bottom: 50px;
     }
 }
-@media screen and (max-width:768px){
-    .project__box-grid{
+
+@media screen and (max-width:768px) {
+    .project__box-grid {
         grid-template-columns: repeat(2, 1fr)
     }
 
 }
+
 /* Навыки */
-.label{}
+.label {}
+
 .skills__box-flex {
     display: flex;
     justify-content: space-between;
-    min-height: 450px; 
+    min-height: 450px;
     margin-bottom: 100px;
 }
-.skills__title{
+
+.skills__title {
     padding-top: 101px;
     margin-bottom: 40px;
 }
-.skills__text{
+
+.skills__text {
     margin-bottom: 12px;
 }
 
@@ -283,36 +307,44 @@ h4 {
     background-color: #999;
     margin-bottom: 27px;
 }
+
 .progress-bar-completed {
     background-color: var(--accent);
 }
-.skills__img{
-    max-width: 555px;    
+
+.skills__img {
+    max-width: 555px;
 }
-@media screen and (max-width:1280px){
-    .skills__box-flex{
+
+@media screen and (max-width:1280px) {
+    .skills__box-flex {
         flex-direction: column;
         margin-bottom: 50px;
     }
-    .skills__list{
+
+    .skills__list {
         margin: 0 auto;
         margin-bottom: 50px;
     }
-    .skills__img{
+
+    .skills__img {
         margin: 0 auto;
     }
-    .skills__title{
+
+    .skills__title {
         padding: 0;
     }
 }
-@media screen and (max-width:768px){
-    .skills__img{
+
+@media screen and (max-width:768px) {
+    .skills__img {
         max-width: 300px;
     }
 }
 
 /* Как я работаю */
-.label{}
+.label {}
+
 video {
     cursor: pointer;
     width: 1110px;
@@ -335,10 +367,12 @@ video {
     margin: 0 auto;
     margin-bottom: 48px;
 }
-@media screen and (max-width:1280px){
-    .video{
+
+@media screen and (max-width:1280px) {
+    .video {
         padding: 15px;
     }
+
     video {
         display: block;
         cursor: pointer;
@@ -346,16 +380,51 @@ video {
         height: 300px;
         margin: 0 auto;
     }
-    .video__title{
+
+    .video__title {
         padding-top: 50px;
     }
 }
-@media screen and (max-width:768px){
-    video{
+
+@media screen and (max-width:768px) {
+    video {
         width: 300px;
         height: 180px;
     }
-    .video__text{
+
+    .video__text {
         margin-bottom: 25px;
     }
+}
+
+/* галерея */
+.gallery {}
+
+.gallery__block-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery__img {
+    display: block;
+    width: 100%;
+    background-size: cover;
+}
+.card {
+    position: relative;
+}
+.card-filter {
+    position: absolute;
+    background-color: var(--accent);
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.card:hover .card-filter {
+    opacity: 0.8;
 }
