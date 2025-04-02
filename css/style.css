@@ -287,12 +287,16 @@ h4 {
 .skills__box-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     min-height: 450px;
     margin-bottom: 100px;
 }
-
+.skills__list{
+    padding-right: 15px;
+    max-width: 350px;
+}
 .skills__title {
-    padding-top: 101px;
+    /* padding-top: 101px; */
     margin-bottom: 40px;
 }
 
@@ -302,7 +306,7 @@ h4 {
 
 .progress-bar {
     display: flex;
-    max-width: 455px;
+    /* max-width: 455px; */
     height: 4px;
     background-color: #999;
     margin-bottom: 27px;
@@ -313,12 +317,17 @@ h4 {
 }
 
 .skills__img {
+    display: block;
     max-width: 555px;
+    width: 100%;
 }
 
 @media screen and (max-width:1280px) {
+    .skills {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .skills__box-flex {
-        flex-direction: column;
         margin-bottom: 50px;
     }
 
@@ -338,7 +347,11 @@ h4 {
 
 @media screen and (max-width:768px) {
     .skills__img {
-        max-width: 300px;
+        display: block;
+        width: 100%;
+    }
+    .skills__box-flex {
+        flex-direction: column;
     }
 }
 
@@ -346,9 +359,11 @@ h4 {
 .label {}
 
 video {
+    display: block;
     cursor: pointer;
-    width: 1110px;
-    height: 600px;
+    max-width: 1110px;
+    max-height: 600px;
+    width: 100%;
     margin-bottom: 124px;
 }
 
@@ -376,8 +391,8 @@ video {
     video {
         display: block;
         cursor: pointer;
-        width: 550px;
-        height: 300px;
+        /* width: 550px;
+        height: 300px; */
         margin: 0 auto;
     }
 
@@ -387,10 +402,10 @@ video {
 }
 
 @media screen and (max-width:768px) {
-    video {
+    /* video {
         width: 300px;
         height: 180px;
-    }
+    } */
 
     .video__text {
         margin-bottom: 25px;
@@ -402,7 +417,7 @@ video {
 
 .gallery__block-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .gallery__img {
@@ -427,4 +442,15 @@ video {
 }
 .card:hover .card-filter {
     opacity: 0.8;
+}
+@media screen and (max-width:1280px) {
+    .gallery__block-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery__block-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
