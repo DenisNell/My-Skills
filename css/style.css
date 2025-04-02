@@ -293,7 +293,8 @@ h4 {
 }
 .skills__list{
     padding-right: 15px;
-    max-width: 350px;
+    max-width: 450px;
+    width: 100%;
 }
 .skills__title {
     /* padding-top: 101px; */
