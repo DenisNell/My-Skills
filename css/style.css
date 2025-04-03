@@ -19,6 +19,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 input {
     margin: 0;
     padding: 0;
@@ -496,6 +497,8 @@ video {
 }
 
 /* Хотите веб-сайт? */
+.label {}
+
 .form {
     background-color: #eeeff1;
     min-height: 762px;
@@ -519,7 +522,8 @@ video {
 
 .form__block-input-flex {
     display: flex;
-    width: 540px;
+    justify-content: space-between;
+    max-width: 540px;
 }
 
 .form_input {
@@ -554,7 +558,21 @@ video {
     text-transform: uppercase;
     margin-bottom: 50px;
 }
+
+textarea,
+input {
+    padding: 15px;
+    border: none;
+}
+
+textarea::placeholder,
+input::placeholder {
+    font-size: 16px;
+}
+
 /* Футер */
+.label {}
+
 .footer {
     background-color: var(--accent);
     min-height: 151px;
@@ -566,8 +584,6 @@ video {
     align-items: center;
     padding-top: 50px;
 }
-
-.footer__info-block {}
 
 .footer__info-name {
     font-family: var(--font-family);
@@ -584,6 +600,39 @@ video {
     color: #fff;
 }
 
-.footer__social {}
+.footer__social {
+    display: flex;
+    gap: 20px;
+}
 
-.footer__img {}
+@media screen and (max-width:1280px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .form {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer__block-flex {
+        flex-direction: column;
+    }
+
+    .footer__info-block {
+        margin-bottom: 25px;
+    }
+
+    .footer__block-flex {
+        padding-top: 20px;
+    }
+
+    .form__block-input-flex {
+        flex-direction: column;
+    }
+
+    .form__button {
+        margin-bottom: 25px;
+    }
+}

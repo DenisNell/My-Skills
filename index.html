@@ -199,13 +199,19 @@
          <h2 class="form__title title">Хотите веб-сайт?</h2>
          <p class="form__text text__p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
          <div class="form__block-input-flex">
-            <form action="">
-               <input class="form_input" type="text">
-               <input class="form_input" type="text">               
-            </form>
+            <div class="form__input-name">
+               <form action="">
+                  <input class="form_input" type="text" name="name" placeholder="Ваше имя">
+               </form>
+            </div>
+            <div class="form__input-email">
+               <form action="">
+                  <input class="form_input" type="text" name="email" placeholder="Ваш e-mail">
+               </form>
+            </div>
          </div>
          <form action="">
-            <textarea class="form_area" name="Сообщение" id=""></textarea>
+            <textarea name="" class="form_area" placeholder="Сообщение" id=""></textarea>
          </form>
          <div class="form__button">
             <h4 class="form__button-text">Отправить</h4>
